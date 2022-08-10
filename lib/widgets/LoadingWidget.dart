@@ -11,13 +11,17 @@ class LoadingWidget extends StatelessWidget {
       color: Colors.white, // Ставим задний фон
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: const [
-          LoadingIndicator(
-            indicatorType: Indicator.pacman,
-            colors: [Colors.blue],
-            strokeWidth: 2,
-            backgroundColor: Colors.white,
-            pathBackgroundColor: Colors.white,
+        children:  [
+          Container(
+            height: 200,
+            alignment: Alignment.center,
+            child: LoadingIndicator(
+              indicatorType: Indicator.pacman,
+              colors: [Colors.blue],
+              strokeWidth: 2,
+              backgroundColor: Colors.white,
+              pathBackgroundColor: Colors.white,
+            ),
           ),
         ],
       ),

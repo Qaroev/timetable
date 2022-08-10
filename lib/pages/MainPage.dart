@@ -32,16 +32,16 @@ class _MainPageState extends State<MainPage> {
   int _selectedNow = 0; // Пременная для отслеживания страницы
   List<BottomNavBarHelper> pages = [
     BottomNavBarHelper(
-      iconA: Icons.person,
-      iconB: Icons.person_outline,
-      label: "Ученики",
-      body: const StudentTimetable(),
-    ),
-    BottomNavBarHelper(
       iconA: Icons.people,
       iconB: Icons.people_outline,
       label: "Учителя",
       body: const TeachersTimetable(),
+    ),
+    BottomNavBarHelper(
+      iconA: Icons.person,
+      iconB: Icons.person_outline,
+      label: "Ученики",
+      body: const StudentTimetable(),
     ),
     BottomNavBarHelper(
       iconA: Icons.access_time_filled,

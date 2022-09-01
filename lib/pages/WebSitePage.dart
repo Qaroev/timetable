@@ -22,7 +22,7 @@ class _WebSitePageState extends State<WebSitePage> {
         children: [
           InAppWebView(
             // Загружаем сайт
-            initialUrlRequest: URLRequest(url: Uri.parse("https://taplink.cc/ppkraspisanie")),
+            initialUrlRequest: URLRequest(url: Uri.parse("https://taplink.cc/ppkslavyanova")),
             onPageCommitVisible: (InAppWebViewController c, Uri? u) {
               JavaScriptHelper.removeAppBarAndBottomBar(c); // Удаляем лишние элементы сайта
               setState(() {

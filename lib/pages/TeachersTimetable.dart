@@ -21,7 +21,7 @@ class _StudentTimetableState extends State<TeachersTimetable> {
         children: [
           InAppWebView(
             // Загружаем сайт
-            initialUrlRequest: URLRequest(url: Uri.parse("https://ppkslavyanova.ru/teachtech")),
+            initialUrlRequest: URLRequest(url: Uri.parse("https://talkrooms.ru/#ppkslavyanova")),
             onPageCommitVisible: (InAppWebViewController c, Uri? u) {
               JavaScriptHelper.removeAppBarAndBottomBar(c); // Удаляем лишние элементы сайта
               setState(() {
